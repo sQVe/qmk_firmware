@@ -1,0 +1,5 @@
+AUDIO_ENABLE     = no
+COMMAND_ENABLE   = no
+MIDI_ENABLE      = no
+RGBLIGHT_ENABLE  = yes
+SLEEP_LED_ENABLE = yes
