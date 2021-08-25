@@ -27,11 +27,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    */
 
   [BASE] = LAYOUT_preonic_grid(
-    KC_ESC,   KC_1,          KC_2,          KC_3,     KC_4,    KC_5,    KC_6,              KC_7,     KC_8,      KC_9,     KC_0,     NO_PLUS,
-    KC_TAB,   KC_Q,          KC_W,          KC_E,     KC_R,    KC_T,    KC_Y,              KC_U,     KC_I,      KC_O,     KC_P,     NO_AM,
-    KC_BSPC,  KC_A,          KC_S,          KC_D,     KC_F,    KC_G,    KC_H,              KC_J,     KC_K,      KC_L,     NO_AE,    LGUI_T(NO_OSLH),
-    KC_LSFT,  LCTL_T(KC_Z),  LALT_T(KC_X),  KC_C,     KC_V,    KC_B,    KC_N,              KC_M,     KC_COMM,   KC_DOT,   NO_MINS,  KC_RSFT,
-    KC_LCTL,  KC_LGUI,       KC_UP,         KC_DOWN,  KC_SPC,  KC_SPC,  LT(SYMB, KC_ENT),  KC_LEFT,  KC_RIGHT,  KC_ALGR,  KC_DEL,   LT(MISC, NO_APOS)
+    KC_ESC,   KC_1,          KC_2,          KC_3,   KC_4,    KC_5,    KC_6,              KC_7,     KC_8,      KC_9,     KC_0,     NO_PLUS,
+    KC_TAB,   KC_Q,          KC_W,          KC_E,   KC_R,    KC_T,    KC_Y,              KC_U,     KC_I,      KC_O,     KC_P,     NO_AM,
+    KC_BSPC,  KC_A,          KC_S,          KC_D,   KC_F,    KC_G,    KC_H,              KC_J,     KC_K,      KC_L,     NO_AE,    LGUI_T(NO_OSLH),
+    KC_LSFT,  LCTL_T(KC_Z),  LALT_T(KC_X),  KC_C,   KC_V,    KC_B,    KC_N,              KC_M,     KC_COMM,   KC_DOT,   NO_MINS,  KC_RSFT,
+    KC_LCTL,  KC_LGUI,       KC_LALT,       KC_UP,  KC_DOWN, KC_SPC,  LT(SYMB, KC_ENT),  KC_LEFT,  KC_RIGHT,  KC_ALGR,  KC_DEL,   LT(MISC, NO_APOS)
   ),
 
   /*
