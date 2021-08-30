@@ -691,7 +691,7 @@ static bool usb_request_hook_cb(USBDriver *usbp) {
 
                     case HID_SET_PROTOCOL:
                         if ((usbp->setup[4] == KEYBOARD_INTERFACE) && (usbp->setup[5] == 0)) { /* wIndex */
-                            keyboard_protocol = ((usbp->setup[2]) != 0x00);                    /* LSB(wValue) */
+                            keyboard_protocol = 1;                    /* LSB(wValue) */
 #ifdef NKRO_ENABLE
                             if (!keyboard_protocol && keyboard_idle) {
 #else  /* NKRO_ENABLE */
