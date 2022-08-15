@@ -8,6 +8,7 @@
 #define FORCE_NKRO
 #define IGNORE_MOD_TAP_INTERRUPT
 #define ORYX_CONFIGURATOR
+#define QMK_KEYS_PER_SCAN 4
 
 // Disabled RGB modes.
 #undef ENABLE_RGB_MATRIX_ALPHAS_MODS
