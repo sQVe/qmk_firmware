@@ -8,6 +8,9 @@ case "$1" in
   ergodox)
     sudo ./util/docker_build.sh ergodox_ez:sqve && teensy-loader-cli -mmcu=atmega32u4 -w .build/ergodox_ez_sqve.hex
     ;;
+  manibus)
+    sudo ./util/docker_build.sh blank_tehnologii/manibus:sqve:flash
+    ;;
   moonlander)
     sudo ./util/docker_build.sh moonlander:sqve:flash
     ;;
