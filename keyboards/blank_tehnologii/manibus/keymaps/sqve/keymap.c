@@ -16,12 +16,13 @@
 #include QMK_KEYBOARD_H
 #include "keymap_nordic.h"
 
-#define CR_SYMB LT(_SYMB, KC_ENT)
-#define ESC_CTL LCTL_T(KC_ESC)
-#define MISC MO(_MISC)
 #define NO_ASTR LSFT(NO_APOS)
+
+#define CR_SYMB LT(_SYMB, KC_ENT)
+#define DEL_MISC LT(_MISC, KC_DEL)
+#define ESC_SYMB LT(_SYMB, KC_ESC)
 #define NO_BSLSH ALGR(NO_PLUS)
-#define Z_CTL LCTL_T(KC_Z)
+#define SPC_CTL LCTL_T(KC_SPC)
 
 enum custom_layers {
     _QWERTY,
@@ -39,9 +40,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //   ├────────┼────────┼────────┼────────┼────────┼────────┤                       ├────────┼────────┼────────┼────────┼────────┼────────┤
       KC_BSPC, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                            KC_H,    KC_J,    KC_K,    KC_L,    NO_AE,   NO_OSLH,
 //   ├────────┼────────┼────────┼────────┼────────┼────────┤                       ├────────┼────────┼────────┼────────┼────────┼────────┤
-      KC_LSFT, Z_CTL,   KC_X,    KC_C,    KC_V,    KC_B,                            KC_N,    KC_M,    KC_COMM, KC_DOT,  NO_MINS, KC_RSFT,
+      KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                            KC_N,    KC_M,    KC_COMM, KC_DOT,  NO_MINS, KC_RSFT,
 //   ├────────┼────────┼────────┼────────┼────────┼────────┼────────┐     ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-      KC_LCTL, KC_DEL,  KC_LALT, KC_UP,   KC_DOWN, KC_SPC,  KC_LGUI,       ESC_CTL, CR_SYMB, KC_LEFT, KC_RGHT, KC_ALGR, MISC,    NO_APOS
+      KC_LCTL, KC_LALT, KC_UP,   KC_DOWN, KC_LCMD, KC_SPC,  SPC_CTL,       ESC_SYMB,CR_SYMB, DEL_MISC,KC_LEFT, KC_RGHT, KC_ALGR, NO_APOS
 //   └────────┴────────┴────────┴────────┴────────┴────────┴────────┘     └────────┴────────┴────────┴────────┴────────┴────────┴────────┘
   ),
 
@@ -49,9 +50,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //   ┌────────┬────────┬────────┬────────┬────────┬────────┐                       ┌────────┬────────┬────────┬────────┬────────┬────────┐
       _______, KC_EXLM, NO_QUO2, KC_HASH, NO_DLR,  KC_PERC,                         NO_AMPR, NO_SLSH, KC_LPRN, NO_RPRN, NO_EQL,  NO_QUES,
 //   ├────────┼────────┼────────┼────────┼────────┼────────┤                       ├────────┼────────┼────────┼────────┼────────┼────────┤
-      _______, NO_LPRN, NO_RPRN, NO_AT,   NO_APOS, NO_GRV,                          KC_HOME, KC_PGDN, KC_PGUP, KC_END,  NO_SLSH, KC_F12,
+      _______, NO_LPRN, NO_RPRN, NO_AT,   NO_APOS, NO_GRV,                          KC_HOME, KC_PGDN, KC_PGUP, KC_END,  NO_SLSH, NO_TILD,
 //   ├────────┼────────┼────────┼────────┼────────┼────────┤                       ├────────┼────────┼────────┼────────┼────────┼────────┤
-      _______, NO_LCBR, NO_RCBR, NO_AMPR, NO_SCLN, NO_EQL,                          KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, NO_CIRC, KC_NO,
+      _______, NO_LCBR, NO_RCBR, NO_AMPR, NO_SCLN, NO_EQL,                          KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, NO_CIRC, NO_ASTR,
 //   ├────────┼────────┼────────┼────────┼────────┼────────┤                       ├────────┼────────┼────────┼────────┼────────┼────────┤
       _______, NO_LBRC, NO_RBRC, NO_PIPE, NO_LESS, NO_GRTR,                         NO_SLSH, NO_BSLSH,NO_SCLN, NO_COLN, NO_UNDS, _______,
 //   ├────────┼────────┼────────┼────────┼────────┼────────┼────────┐     ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
