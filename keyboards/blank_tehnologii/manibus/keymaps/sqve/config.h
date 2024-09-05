@@ -18,4 +18,3 @@
 
 #define EE_HANDS
 #define FORCE_NKRO
-#define IGNORE_MOD_TAP_INTERRUPT
