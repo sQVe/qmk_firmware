@@ -17,4 +17,4 @@
 #pragma once
 
 #define EE_HANDS
-#define FORCE_NKRO
+#define NKRO_ENABLEFORCE_NKRO
