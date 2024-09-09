@@ -5,6 +5,6 @@
 
 #include "../../rev3/config.h"
 
-#define FORCE_NKRO
+#define NKRO_ENABLE
 
 #endif

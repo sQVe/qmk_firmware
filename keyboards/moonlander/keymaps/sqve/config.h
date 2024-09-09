@@ -5,7 +5,7 @@
 
 #include "../../config.h"
 
-#define FORCE_NKRO
+#define NKRO_ENABLE
 #define ORYX_CONFIGURATOR
 #define QMK_KEYS_PER_SCAN 4
 

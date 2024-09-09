@@ -6,6 +6,6 @@
 #include "../../config.h"
 
 #define DEBOUNCE 15
-#define FORCE_NKRO
+#define NKRO_ENABLE
 
 #endif
