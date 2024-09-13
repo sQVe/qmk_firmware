@@ -53,7 +53,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        _______, NO_LPRN, NO_RPRN,   NO_AT, NO_APOS,  NO_GRV,    KC_HOME, KC_PGDN, KC_PGUP,  KC_END, XXXXXXX, NO_TILD,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       _______, NO_LCBR, NO_RCBR, NO_AMPR, XXXXXXX,  NO_EQL,    KC_LEFT, KC_DOWN,   KC_UP, KC_RGHT, KC_CIRC,    ASTR,
+       _______, NO_LCBR, NO_RCBR, NO_AMPR, XXXXXXX,  NO_EQL,    KC_LEFT, KC_DOWN,   KC_UP, KC_RGHT, NO_CIRC,    ASTR,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        _______, NO_LBRC, NO_RBRC, NO_PIPE, NO_LESS, NO_GRTR,    NO_SLSH,   BSLSH, NO_SCLN, NO_COLN, NO_UNDS, _______,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
