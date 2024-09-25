@@ -97,8 +97,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 layer_state_t layer_state_set_user(layer_state_t state) {
     force_pointing_device_enabled = false;
     if (get_highest_layer(state) == LAYER_POINTER) {
-        last_key_release_time         = 0;
         force_pointing_device_enabled = true;
+        keys_pressed_down             = 0;
+        last_key_release_time         = 0;
     }
     charybdis_set_pointer_sniping_enabled(layer_state_cmp(state, LAYER_POINTER));
     return state;
