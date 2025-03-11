@@ -10,6 +10,8 @@ The Charybdis is available in 4x6 and 3x5 form factor at [bastardkb.com](https:/
 
 A simple QWERTY layout with 4 layers.
 
-### [`via`](keymaps/via)
+### `vendor`
 
-A [Miryoku-inspired](https://github.com/manna-harbour/miryoku), feature-rich, keymap with VIA support.
+The `vendor` keymap is in the `bastardkb/qmk_userspace` repository: https://github.com/Bastardkb/qmk_userspace/
+
+For detailed instructions on how to use them, please see https://docs.bastardkb.com/fw/compile-firmware.html

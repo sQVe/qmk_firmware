@@ -8,19 +8,7 @@ A split, compact ergonomic keyboard.
 
 ## Building the firmware
 
-The template is:
-
-```shell
-qmk compile -kb bastardkb/tbkmini -km {KEYMAP}
-```
-
-| default                                              |
-| ---------------------------------------------------- |
-| `qmk compile -kb bastardkb/tbkmini -km default`      |
-
-See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
-
-See the [keyboard build instructions](http://docs.bastardkb.com/)
+For instructions on how to build your firmware, please see https://docs.bastardkb.com/fw/compile-firmware.html
 
 ### Legacy hardware
 

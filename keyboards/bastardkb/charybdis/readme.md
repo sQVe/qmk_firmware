@@ -18,35 +18,7 @@ Check out the [keyboard build guides](https://docs.bastardkb.com) for the Charyb
 
 ## Building the firmware
 
-The template is:
-
-```shell
-qmk compile -kb bastardkb/charybdis/{LAYOUT} -km {KEYMAP}
-```
-
-See below for populated commands per layout
-
-The `default` keymap is inspired from the original [Dactyl Manuform](../../handwired/dactyl_manuform) layout.
-
-Check out the `via` layout if you're looking for VIA support.
-
-### Charybdis (4x6)
-
-| default                                               | via                                               |
-| ----------------------------------------------------- | ------------------------------------------------- |
-| `qmk compile -kb bastardkb/charybdis/4x6 -km default` | `qmk compile -kb bastardkb/charybdis/4x6 -km via` |
-
-### Charybdis (3x6)
-
-| default                                               | via                                               |
-| ----------------------------------------------------- | ------------------------------------------------- |
-| `qmk compile -kb bastardkb/charybdis/3x6 -km default` | `qmk compile -kb bastardkb/charybdis/3x6 -km via` |
-
-### Charybdis (3x5)
-
-| default                                               | via                                               |
-| ----------------------------------------------------- | ------------------------------------------------- |
-| `qmk compile -kb bastardkb/charybdis/3x5 -km default` | `qmk compile -kb bastardkb/charybdis/3x5 -km via` |
+For instructions on how to build your firmware, please see https://docs.bastardkb.com/fw/compile-firmware.html
 
 ### Legacy hardware
 
