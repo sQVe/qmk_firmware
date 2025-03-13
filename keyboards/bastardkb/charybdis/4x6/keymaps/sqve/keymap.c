@@ -101,7 +101,6 @@ layer_state_t layer_state_set_user(layer_state_t state) {
         keys_pressed_down             = 0;
         last_key_release_time         = 0;
     }
-    charybdis_set_pointer_sniping_enabled(layer_state_cmp(state, LAYER_POINTER));
     return state;
 }
 
