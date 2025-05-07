@@ -20,15 +20,14 @@ enum keymap_layers {
     LAYER_POINTER,
 };
 
-// Additional keys.
 #define ASTR LSFT(NO_APOS)
 #define BSLSH ALGR(NO_PLUS)
 
-// Modifier keys.
-#define LT_AE LT(LAYER_POINTER, NO_AE)
-#define LT_CR LT(LAYER_SYMBOL, KC_ENT)
+#define GUIESC LGUI_T(KC_ESC)
 #define MISC OSL(LAYER_MISC)
-#define MT_APOS MT(MOD_RSFT, NO_APOS)
+#define POINTAE LT(LAYER_POINTER, NO_AE)
+#define SFTAPOS MT(MOD_RSFT, NO_APOS)
+#define SYMBENT LT(LAYER_SYMBOL, KC_ENT)
 
 // clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -38,12 +37,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
         KC_TAB,    KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,       KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,   NO_AM,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_BSPC,    KC_A,    KC_S,    KC_D,    KC_F,    KC_G,       KC_H,    KC_J,    KC_K,    KC_L,   LT_AE, NO_OSLH,
+       KC_BSPC,    KC_A,    KC_S,    KC_D,    KC_F,    KC_G,       KC_H,    KC_J,    KC_K,    KC_L, POINTAE, NO_OSLH,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_LSFT,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,       KC_N,    KC_M, KC_COMM,  KC_DOT, NO_MINS, MT_APOS,
+       KC_LSFT,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,       KC_N,    KC_M, KC_COMM,  KC_DOT, NO_MINS, SFTAPOS,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
-                                   KC_LGUI, KC_SPC,    MISC,     KC_ESC,   LT_CR,
-                                           KC_LCTL,  KC_DEL,    KC_LALT
+                                   GUIESC,  KC_SPC,    MISC,    KC_ALGR, SYMBENT,
+                                           KC_LCTL, KC_LALT,    KC_DEL
   //                            ╰───────────────────────────╯ ╰──────────────────╯
   ),
 
