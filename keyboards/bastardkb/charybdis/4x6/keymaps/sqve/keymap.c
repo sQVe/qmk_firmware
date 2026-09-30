@@ -44,7 +44,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                    GUIESC,  KC_SPC,    MISC,    KC_ALGR, SYMBENT,
                                            KC_LCTL, KC_LALT,    KC_DEL
   //                            ╰───────────────────────────╯ ╰──────────────────╯
-  ),
+),
 
   [LAYER_SYMBOL] = LAYOUT(
   // ╭──────────────────────────────────────────────────────╮ ╭──────────────────────────────────────────────────────╮
