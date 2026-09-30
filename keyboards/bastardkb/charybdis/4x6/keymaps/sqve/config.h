@@ -4,8 +4,7 @@
 #define MASTER_RIGHT
 
 // Enable NKRO.
-#define FORCE_NKRO
-#define NKRO_ENABLE
+#define NKRO_DEFAULT_ON true
 
 // Set tapping term.
 #define TAPPING_TERM 150
@@ -19,11 +18,12 @@
 // Time to disable pointing device when typing.
 #define POINTING_DEVICE_TIMEOUT 400
 
-// Sync config between the two halves.
-#define CHARYBDIS_CONFIG_SYNC
+// Argos uses this count to size its RGB settings storage.
+#define RGBLIGHT_LED_COUNT RGB_MATRIX_LED_COUNT
+#define LED_DPI_INDICATOR_INDEX 1
 
-// Invert Y axis dragscroll.
-#define CHARYBDIS_DRAGSCROLL_REVERSE_Y
+#define AUTO_MOUSE_DEFAULT_LAYER 3
+#define SQVE_POINTER_DPI 400
 
-// Tweak DPI.
-#define CHARYBDIS_MINIMUM_DEFAULT_DPI 400
+// The module's scroll threshold is five times the old Charybdis threshold.
+#define SQVE_DRAGSCROLL_DPI 500
